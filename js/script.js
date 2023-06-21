@@ -1,6 +1,33 @@
-const myButton = document.querySelector('button')
+const myButton = document.querySelector('button');
 
-const myContainer = document.querySelector('.grid-container')
+const myContainer = document.querySelector('.grid-container');
+
+
+
+myButton.addEventListener ('click', function (){
+
+    for (let index = 1; index <= 100; index++) {
+    
+        const myCell = document.createElement ('div');
+        myCell.classList.add('cell');
+        myCell.append(index)
+    
+        myCell.addEventListener ('click', function (){
+    
+            this.classList.toggle('active');
+            console.log(this.innerHTML)
+    
+        });
+
+        myContainer.append(myCell);
+    }
+
+});
+
+
+
+
+
 
 
 
