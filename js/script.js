@@ -1,10 +1,12 @@
 const myButton = document.querySelector('button');
 
-const myContainer = document.querySelector('.grid-container');
 
 
 
 myButton.addEventListener ('click', function (){
+
+    const myContainer = document.querySelector('.grid-container');
+    myContainer.innerHTML = ''
 
     for (let index = 1; index <= 100; index++) {
     
